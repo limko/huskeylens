@@ -16,7 +16,7 @@ function TakeNote () {
         DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.CYAN)
     }
     if (ID == 6) {
-        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBL, Color.PINK)
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.PINK)
     }
     if (ID == 7) {
         DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
