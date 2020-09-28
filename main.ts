@@ -1,25 +1,25 @@
 function TakeNote () {
     ID = huskylens.readBox_s(Content3.ID)
-    if (0 == 0) {
-    	
+    if (ID == 1) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.BLUE)
     }
-    if (true) {
-    	
+    if (ID == 2) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.RED)
     }
-    if (true) {
-    	
+    if (ID == 3) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.GREEN)
     }
-    if (true) {
-    	
+    if (ID == 4) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.YELLOW)
     }
-    if (true) {
-    	
+    if (ID == 5) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.CYAN)
     }
-    if (true) {
-    	
+    if (ID == 6) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBL, Color.PINK)
     }
-    if (true) {
-    	
+    if (ID == 7) {
+        DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
     }
 }
 let ID = 0
