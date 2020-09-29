@@ -22,6 +22,8 @@ function TakeNote () {
         DFRobotMaqueenPlus.setRGBLight(RGBLight.RGBA, Color.OFF)
     }
 }
+let height = 0
+let width = 0
 let ID = 0
 huskylens.initI2c()
 huskylens.initMode(protocolAlgorithm.ALGORITHM_COLOR_RECOGNITION)
@@ -29,7 +31,11 @@ basic.forever(function () {
     huskylens.request()
     if (huskylens.isLearned(1)) {
         if (huskylens.isAppear_s(HUSKYLENSResultType_t.HUSKYLENSResultBlock)) {
-            TakeNote()
+            width = huskylens.readBox_s(Content3.width)
+            height = huskylens.readBox_s(Content3.height)
+            if (width * height > 5000) {
+                TakeNote()
+            }
         }
     }
 })
